@@ -1,11 +1,15 @@
 Package: assignmentB2CassieDavis
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Count Missing Values Across Dataset Groups
+Version: 0.1.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Cassie", "Davis", , "casssiedavis4@gmail.com", role = c("aut", "cre"))
+Description: Function that counts missing values across columns of a dataset separately for each group and defined by a selected variable in order to help identify patterns of missing data between groups.
+License: MIT + file LICENSE
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+Imports: 
+    dplyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

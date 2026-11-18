@@ -1,0 +1,43 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# assignmentB2CassieDavis
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+assignmentB2CassieDavis is a package that has a function called count_all_missing_by_group() that counts the number of missing values in a dataset. It groups observations by a selected variable and calculates how many missing variables there are in each column for each group, making it easier to identify missing data patterns across groups.
+
+## Installation
+
+You can install the development version of assignmentB2CassieDavis from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github(
+  "UBC-STAT545-F2026/assignmentB2CassieDavis",
+  ref = "0.1.0")
+```
+
+## Example
+
+This example uses the built-in `airquality` dataset to count
+missing values in each column, grouped by month.
+
+```{r example}
+library(assignmentB2CassieDavis)
+
+count_all_missing_by_group(airquality, Month)
+```
